@@ -8,7 +8,8 @@
 */
 int main()
 {
-    Stack *s = CreateStack();
+    Stack *s;
+    s = CreateStack();
     s->data->type = t_int;
     Type a,b;
     a.i = 55;

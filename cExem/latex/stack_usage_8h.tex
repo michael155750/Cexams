@@ -1,0 +1,96 @@
+\hypertarget{stack_usage_8h}{}\doxysection{stack\+Usage.\+h File Reference}
+\label{stack_usage_8h}\index{stackUsage.h@{stackUsage.h}}
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$ \mbox{\hyperlink{stack_usage_8h_a07024c474ffedf71428b1af472fc58d9}{Create\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em create a new stack \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_usage_8h_ada1ec0dc7c080170e037a14bb4e3b63b}{Delete\+Stack}} (\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em delete a stack \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{stack_usage_8h_af4a57334b0f7923cbd4d863be8697e91}{Stack\+Push}} (\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$s, \mbox{\hyperlink{uniontype__t}{Type}} item, T type)
+\begin{DoxyCompactList}\small\item\em push an item to the stack \end{DoxyCompactList}\item 
+\mbox{\hyperlink{uniontype__t}{Type}} \mbox{\hyperlink{stack_usage_8h_a991d05b2271685eb42bf6b7621e84e75}{Stack\+Pop}} (\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em pop an item from the stack \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{stack_usage_8h_aa3b8872f3fe3bb70a703178ddd72ce8f}{Stack\+Get\+Last\+Error}} (\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Get last error code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{stack_usage_8h_a07024c474ffedf71428b1af472fc58d9}\label{stack_usage_8h_a07024c474ffedf71428b1af472fc58d9}} 
+\index{stackUsage.h@{stackUsage.h}!CreateStack@{CreateStack}}
+\index{CreateStack@{CreateStack}!stackUsage.h@{stackUsage.h}}
+\doxysubsubsection{\texorpdfstring{CreateStack()}{CreateStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}}$\ast$ Create\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+create a new stack 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_usage_8h_ada1ec0dc7c080170e037a14bb4e3b63b}\label{stack_usage_8h_ada1ec0dc7c080170e037a14bb4e3b63b}} 
+\index{stackUsage.h@{stackUsage.h}!DeleteStack@{DeleteStack}}
+\index{DeleteStack@{DeleteStack}!stackUsage.h@{stackUsage.h}}
+\doxysubsubsection{\texorpdfstring{DeleteStack()}{DeleteStack()}}
+{\footnotesize\ttfamily void Delete\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+delete a stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_usage_8h_aa3b8872f3fe3bb70a703178ddd72ce8f}\label{stack_usage_8h_aa3b8872f3fe3bb70a703178ddd72ce8f}} 
+\index{stackUsage.h@{stackUsage.h}!StackGetLastError@{StackGetLastError}}
+\index{StackGetLastError@{StackGetLastError}!stackUsage.h@{stackUsage.h}}
+\doxysubsubsection{\texorpdfstring{StackGetLastError()}{StackGetLastError()}}
+{\footnotesize\ttfamily int Stack\+Get\+Last\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Get last error code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_usage_8h_a991d05b2271685eb42bf6b7621e84e75}\label{stack_usage_8h_a991d05b2271685eb42bf6b7621e84e75}} 
+\index{stackUsage.h@{stackUsage.h}!StackPop@{StackPop}}
+\index{StackPop@{StackPop}!stackUsage.h@{stackUsage.h}}
+\doxysubsubsection{\texorpdfstring{StackPop()}{StackPop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{uniontype__t}{Type}} Stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+pop an item from the stack 
+
+\begin{DoxyReturn}{Returns}
+the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_usage_8h_af4a57334b0f7923cbd4d863be8697e91}\label{stack_usage_8h_af4a57334b0f7923cbd4d863be8697e91}} 
+\index{stackUsage.h@{stackUsage.h}!StackPush@{StackPush}}
+\index{StackPush@{StackPush}!stackUsage.h@{stackUsage.h}}
+\doxysubsubsection{\texorpdfstring{StackPush()}{StackPush()}}
+{\footnotesize\ttfamily void Stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stack_8h_ab4f909f55281ab75e215da7ed2089f3c}{Stack}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{uniontype__t}{Type}}}]{item,  }\item[{T}]{type }\end{DoxyParamCaption})}
+
+
+
+push an item to the stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the stack \\
+\hline
+{\em item} & the item \\
+\hline
+\end{DoxyParams}
