@@ -11,4 +11,5 @@
 typedef struct stack_t
 {
     LinkedList *data;
+    int errorCode;
 }Stack;

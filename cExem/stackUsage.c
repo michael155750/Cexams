@@ -33,20 +33,35 @@ void StackPush(Stack *s, Type item,T type)
 
 Type StackPop(Stack *s)
 {
-    LinkedList *l = s->data->nextNode;
-    while (l->nextNode)
+    if (s->data)
     {
-        l = l->nextNode;
+
+        LinkedList *l = s->data->nextNode;
+        if (!l)
+        {
+            Type result = l->node;
+            free(l);
+            
+            return result;
+        }
+        while (l->nextNode)
+        {
+            l = l->nextNode;
+        }
+        Type result = l->nextNode->node;
+        free(l->nextNode);
+        l->nextNode = NULL;
+        return result;
     }
-    Type result = l->nextNode->node;
-    free(l->nextNode);
-    l->nextNode = NULL;
-    return result;
+    else
+    {
+        ++s->errorCode;
+    }
 }
 
 int StackGetLastError(Stack *s)
 {
-    return 0;
+    return s->errorCode;
 }
 
 void DeleteList(LinkedList *l)

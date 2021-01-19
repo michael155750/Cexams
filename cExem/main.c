@@ -9,5 +9,10 @@
 int main()
 {
     Stack *s = CreateStack();
-    Pu
+    s->data->type = t_int;
+    Type a,b;
+    a.i = 55;
+    StackPush(s,a,t_int);
+    b.i = StackPop(s);
+    return 0;
 }
