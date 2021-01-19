@@ -1,6 +1,6 @@
 #pragma once
 /**
-* @file linkedList.h
+* @file linkesList.h
 */
 
 typedef union type_t
@@ -23,7 +23,7 @@ T;
 typedef struct linkedList_t
 {
     Type node;
-    Type *nextNode;
+    LinkedList *nextNode;
     T type;
 }LinkedList;
 

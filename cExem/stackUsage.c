@@ -34,11 +34,19 @@ void StackPush(Stack *s, Type item,T type)
 Type StackPop(Stack *s)
 {
     LinkedList *l = s->data->nextNode;
-    while (l)
+    while (l->nextNode)
     {
         l = l->nextNode;
     }
-    return ;
+    Type result = l->nextNode->node;
+    free(l->nextNode);
+    l->nextNode = NULL;
+    return result;
+}
+
+int StackGetLastError(Stack *s)
+{
+    return 0;
 }
 
 void DeleteList(LinkedList *l)
